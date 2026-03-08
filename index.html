@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aurora Valley College - Excellence in Education">
+    <title>Aurora Valley College | Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-graduation-cap"></i>
+                Aurora Valley College
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#courses" class="nav-link">Courses</a></li>
+                <li><a href="#admissions" class="nav-link">Admissions</a></li>
+                <li><a href="#hostel" class="nav-link">Hostel</a></li>
+                <li><a href="#placements" class="nav-link">Placements</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <section id="home" class="page active">
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Aurora Valley College</h1>
+                <p class="hero-tagline">Where Dreams Take Flight • Excellence in Education Since 1995</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="navigateTo('admissions')">Apply Now</button>
+                    <button class="btn btn-outline" onclick="navigateTo('courses')">Explore Courses</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Overview -->
+        <div class="container">
+            <div class="overview-section">
+                <h2 class="section-title">Welcome to Aurora Valley College</h2>
+                <p class="section-subtitle">
+                    A premier institution dedicated to nurturing tomorrow's leaders through innovative education,
+                    cutting-edge research, and holistic development.
+                </p>
+                
+                <div class="feature-grid">
+                    <div class="feature-card" onclick="navigateTo('admissions')">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h3>Admissions</h3>
+                        <p>Join our vibrant community of learners. Apply for 2024-25 batch now!</p>
+                        <span class="feature-link">Learn More →</span>
+                    </div>
+
+                    <div class="feature-card" onclick="navigateTo('courses')">
+                        <div class="feature-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h3>Courses</h3>
+                        <p>Explore our wide range of undergraduate and postgraduate programs.</p>
+                        <span class="feature-link">View Programs →</span>
+                    </div>
+
+                    <div class="feature-card" onclick="navigateTo('hostel')">
+                        <div class="feature-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Hostel</h3>
+                        <p>Comfortable living spaces with modern amenities for all students.</p>
+                        <span class="feature-link">Explore Facilities →</span>
+                    </div>
+
+                    <div class="feature-card" onclick="navigateTo('placements')">
+                        <div class="feature-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>Placements</h3>
+                        <p>95% placement rate with top companies. Your career starts here!</p>
+                        <span class="feature-link">View Statistics →</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Statistics -->
+            <div class="stats-section">
+                <div class="stat-item">
+                    <h3>15,000+</h3>
+                    <p>Students</p>
+                </div>
+                <div class="stat-item">
+                    <h3>500+</h3>
+                    <p>Faculty Members</p>
+                </div>
+                <div class="stat-item">
+                    <h3>95%</h3>
+                    <p>Placement Rate</p>
+                </div>
+                <div class="stat-item">
+                    <h3>50+</h3>
+                    <p>Partner Companies</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Page -->
+    <section id="about" class="page">
+        <div class="container">
+            <h1 class="page-title">About Aurora Valley College</h1>
+            
+            <div class="content-grid">
+                <div class="content-card">
+                    <h2><i class="fas fa-info-circle"></i> About Us</h2>
+                    <p>
+                        Aurora Valley College, established in 1995, stands as a beacon of academic excellence in the heart of the valley. 
+                        With over 25 years of educational leadership, we have transformed countless lives through quality education, 
+                        innovative research, and character building.
+                    </p>
+                    <p>
+                        Our sprawling 150-acre campus houses state-of-the-art facilities, fostering an environment where students 
+                        can explore, innovate, and excel in their chosen fields.
+                    </p>
+                </div>
+
+                <div class="content-card">
+                    <h2><i class="fas fa-bullseye"></i> Our Mission</h2>
+                    <p>
+                        To provide transformative education that empowers students to become innovative thinkers, 
+                        ethical leaders, and responsible global citizens who contribute meaningfully to society.
+                    </p>
+                </div>
+
+                <div class="content-card">
+                    <h2><i class="fas fa-eye"></i> Our Vision</h2>
+                    <p>
+                        To be recognized globally as a premier institution that sets benchmarks in academic excellence, 
+                        research innovation, and holistic student development.
+                    </p>
+                </div>
+
+                <div class="content-card full-width">
+                    <h2><i class="fas fa-star"></i> Campus Highlights</h2>
+                    <div class="highlights-grid">
+                        <div class="highlight-item">
+                            <i class="fas fa-microscope"></i>
+                            <h4>Research Centers</h4>
+                            <p>10 specialized research centers driving innovation</p>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-wifi"></i>
+                            <h4>Smart Campus</h4>
+                            <p>Fully Wi-Fi enabled campus with digital classrooms</p>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-book"></i>
+                            <h4>Central Library</h4>
+                            <p>2 million+ books and digital resources</p>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-dumbbell"></i>
+                            <h4>Sports Complex</h4>
+                            <p>Olympic-size pool, gym, and sports fields</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Page -->
+    <section id="courses" class="page">
+        <div class="container">
+            <h1 class="page-title">Our Programs</h1>
+            <p class="page-subtitle">Discover programs designed to shape your future</p>
+
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-header">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>B.Tech</h3>
+                        <span class="course-duration">4 Years</span>
+                    </div>
+                    <p>Bachelor of Technology in Computer Science, Mechanical, Civil, and Electrical Engineering. 
+                    Industry-aligned curriculum with hands-on projects and internships.</p>
+                    <ul class="course-features">
+                        <li>Computer Science & Engineering</li>
+                        <li>Mechanical Engineering</li>
+                        <li>Civil Engineering</li>
+                        <li>Electrical Engineering</li>
+                    </ul>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-header">
+                        <i class="fas fa-desktop"></i>
+                        <h3>BCA</h3>
+                        <span class="course-duration">3 Years</span>
+                    </div>
+                    <p>Bachelor of Computer Applications focusing on software development, database management, 
+                    and emerging technologies like AI and cloud computing.</p>
+                    <ul class="course-features">
+                        <li>Software Development</li>
+                        <li>Web Technologies</li>
+                        <li>Mobile App Development</li>
+                        <li>Data Science Fundamentals</li>
+                    </ul>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-header">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>BBA</h3>
+                        <span class="course-duration">3 Years</span>
+                    </div>
+                    <p>Bachelor of Business Administration with specializations in Marketing, Finance, 
+                    HR, and International Business. Develop leadership and entrepreneurial skills.</p>
+                    <ul class="course-features">
+                        <li>Marketing Management</li>
+                        <li>Financial Management</li>
+                        <li>Human Resources</li>
+                        <li>Operations Management</li>
+                    </ul>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-header">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>MBA</h3>
+                        <span class="course-duration">2 Years</span>
+                    </div>
+                    <p>Master of Business Administration with dual specialization options. 
+                    Case-based learning with industry mentorship and global exposure.</p>
+                    <ul class="course-features">
+                        <li>Strategic Management</li>
+                        <li>Business Analytics</li>
+                        <li>Digital Marketing</li>
+                        <li>Supply Chain Management</li>
+                    </ul>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-header">
+                        <i class="fas fa-palette"></i>
+                        <h3>BA</h3>
+                        <span class="course-duration">3 Years</span>
+                    </div>
+                    <p>Bachelor of Arts in English, Psychology, Economics, and Political Science. 
+                    Develop critical thinking and communication skills for diverse career paths.</p>
+                    <ul class="course-features">
+                        <li>English Literature</li>
+                        <li>Psychology</li>
+                        <li>Economics</li>
+                        <li>Political Science</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admissions Page -->
+    <section id="admissions" class="page">
+        <div class="container">
+            <h1 class="page-title">Admissions 2024-25</h1>
+            
+            <div class="admission-content">
+                <div class="admission-card">
+                    <h2><i class="fas fa-clipboard-list"></i> Admission Process</h2>
+                    <div class="process-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <h4>Online Application</h4>
+                            <p>Fill out the online application form with accurate details</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <h4>Entrance Exam</h4>
+                            <p>Appear for AVC entrance test or submit national test scores</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <h4>Document Verification</h4>
+                            <p>Submit required documents for verification</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <h4>Counseling</h4>
+                            <p>Attend counseling session for course and branch selection</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">5</div>
+                            <h4>Fee Payment</h4>
+                            <p>Complete fee payment to confirm your admission</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="admission-card">
+                    <h2><i class="fas fa-check-circle"></i> Eligibility Criteria</h2>
+                    <div class="eligibility-list">
+                        <div class="eligibility-item">
+                            <h4>B.Tech</h4>
+                            <p>10+2 with Physics, Chemistry, and Mathematics (Min. 60%)</p>
+                        </div>
+                        <div class="eligibility-item">
+                            <h4>BCA</h4>
+                            <p>10+2 with Mathematics/Computer Science (Min. 50%)</p>
+                        </div>
+                        <div class="eligibility-item">
+                            <h4>BBA</h4>
+                            <p>10+2 in any stream (Min. 50%)</p>
+                        </div>
+                        <div class="eligibility-item">
+                            <h4>MBA</h4>
+                            <p>Bachelor's degree in any discipline (Min. 50%)</p>
+                        </div>
+                        <div class="eligibility-item">
+                            <h4>BA</h4>
+                            <p>10+2 in any stream (Min. 45%)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="admission-card">
+                    <h2><i class="fas fa-file-alt"></i> Required Documents</h2>
+                    <ul class="document-list">
+                        <li><i class="fas fa-check"></i> 10th Mark Sheet and Certificate</li>
+                        <li><i class="fas fa-check"></i> 12th Mark Sheet and Certificate</li>
+                        <li><i class="fas fa-check"></i> Transfer Certificate</li>
+                        <li><i class="fas fa-check"></i> Migration Certificate (if applicable)</li>
+                        <li><i class="fas fa-check"></i> Aadhar Card</li>
+                        <li><i class="fas fa-check"></i> Passport Size Photographs (6 copies)</li>
+                        <li><i class="fas fa-check"></i> Caste Certificate (if applicable)</li>
+                        <li><i class="fas fa-check"></i> Income Certificate</li>
+                        <li><i class="fas fa-check"></i> Medical Fitness Certificate</li>
+                    </ul>
+                </div>
+
+                <div class="cta-section">
+                    <h3>Ready to Apply?</h3>
+                    <p>Start your journey with Aurora Valley College today!</p>
+                    <button class="btn btn-primary">Apply Online</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hostel Page -->
+    <section id="hostel" class="page">
+        <div class="container">
+            <h1 class="page-title">Hostel Facilities</h1>
+            <p class="page-subtitle">Your home away from home</p>
+
+            <div class="hostel-grid">
+                <div class="hostel-card">
+                    <div class="hostel-icon">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <h3>Accommodation</h3>
+                    <ul>
+                        <li>Separate hostels for boys and girls</li>
+                        <li>Single, double, and triple occupancy rooms</li>
+                        <li>Attached bathrooms in all rooms</li>
+                        <li>24/7 water and electricity supply</li>
+                        <li>Study tables and wardrobes</li>
+                    </ul>
+                </div>
+
+                <div class="hostel-card">
+                    <div class="hostel-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Food & Dining</h3>
+                    <ul>
+                        <li>Hygienic vegetarian and non-vegetarian meals</li>
+                        <li>4 meals a day including snacks</li>
+                        <li>Special diet for health conditions</li>
+                        <li>Festival special meals</li>
+                        <li>Clean and spacious dining halls</li>
+                    </ul>
+                </div>
+
+                <div class="hostel-card">
+                    <div class="hostel-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Security</h3>
+                    <ul>
+                        <li>24/7 security personnel</li>
+                        <li>CCTV surveillance</li>
+                        <li>Biometric entry system</li>
+                        <li>Visitor management system</li>
+                        <li>Emergency medical assistance</li>
+                    </ul>
+                </div>
+
+                <div class="hostel-card">
+                    <div class="hostel-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Recreation</h3>
+                    <ul>
+                        <li>Common rooms with TV</li>
+                        <li>Indoor games facilities</li>
+                        <li>Gymnasium</li>
+                        <li>Reading rooms</li>
+                        <li>Music room</li>
+                    </ul>
+                </div>
+
+                <div class="hostel-card">
+                    <div class="hostel-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Amenities</h3>
+                    <ul>
+                        <li>High-speed Wi-Fi</li>
+                        <li>Laundry service</li>
+                        <li>Hot water facility</li>
+                        <li>Medical room</li>
+                        <li>Guest rooms for parents</li>
+                    </ul>
+                </div>
+
+                <div class="hostel-card">
+                    <div class="hostel-icon">
+                        <i class="fas fa-bus"></i>
+                    </div>
+                    <h3>Transport</h3>
+                    <ul>
+                        <li>Regular bus service to city</li>
+                        <li>Emergency vehicle available</li>
+                        <li>Bicycle parking</li>
+                        <li>Easy access to public transport</li>
+                        <li>Weekend shopping trips</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="hostel-info">
+                <h3>Hostel Fee Structure</h3>
+                <p>Annual hostel fees range from ₹80,000 to ₹1,20,000 depending on room type and facilities.</p>
+                <p>For detailed fee structure and availability, contact the hostel office.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Placements Page -->
+    <section id="placements" class="page">
+        <div class="container">
+            <h1 class="page-title">Placements & Career</h1>
+            
+            <div class="placement-stats">
+                <div class="stat-card">
+                    <h2>95%</h2>
+                    <p>Overall Placement Rate</p>
+                </div>
+                <div class="stat-card">
+                    <h2>₹8.5 LPA</h2>
+                    <p>Average Package</p>
+                </div>
+                <div class="stat-card">
+                    <h2>₹45 LPA</h2>
+                    <p>Highest Package</p>
+                </div>
+                <div class="stat-card">
+                    <h2>200+</h2>
+                    <p>Companies Visited</p>
+                </div>
+            </div>
+
+            <div class="placement-content">
+                <div class="placement-card">
+                    <h2><i class="fas fa-building"></i> Top Recruiters</h2>
+                    <div class="recruiters-grid">
+                        <div class="recruiter">Microsoft</div>
+                        <div class="recruiter">Google</div>
+                        <div class="recruiter">Amazon</div>
+                        <div class="recruiter">Infosys</div>
+                        <div class="recruiter">TCS</div>
+                        <div class="recruiter">Wipro</div>
+                        <div class="recruiter">Deloitte</div>
+                        <div class="recruiter">Accenture</div>
+                        <div class="recruiter">IBM</div>
+                        <div class="recruiter">Oracle</div>
+                        <div class="recruiter">HDFC Bank</div>
+                        <div class="recruiter">L&T</div>
+                    </div>
+                </div>
+
+                <div class="placement-card">
+                    <h2><i class="fas fa-graduation-cap"></i> Training & Placement Cell</h2>
+                    <p>Our dedicated Training and Placement Cell works tirelessly to bridge the gap between 
+                    students and industry. We provide comprehensive training programs to enhance employability skills.</p>
+                    
+                    <h4>Key Activities:</h4>
+                    <ul class="activities-list">
+                        <li><i class="fas fa-check"></i> Personality Development Programs</li>
+                        <li><i class="fas fa-check"></i> Technical Skills Training</li>
+                        <li><i class="fas fa-check"></i> Mock Interviews & Group Discussions</li>
+                        <li><i class="fas fa-check"></i> Industry Guest Lectures</li>
+                        <li><i class="fas fa-check"></i> Internship Opportunities</li>
+                        <li><i class="fas fa-check"></i> Resume Building Workshops</li>
+                        <li><i class="fas fa-check"></i> Aptitude Test Preparation</li>
+                        <li><i class="fas fa-check"></i> Soft Skills Training</li>
+                    </ul>
+                </div>
+
+                <div class="placement-card">
+                    <h2><i class="fas fa-chart-bar"></i> Placement Trends</h2>
+                    <div class="trends-info">
+                        <p>Year-on-year growth in placement statistics:</p>
+                        <table class="trends-table">
+                            <tr>
+                                <th>Year</th>
+                                <th>Placement %</th>
+                                <th>Avg. Package</th>
+                            </tr>
+                            <tr>
+                                <td>2023-24</td>
+                                <td>95%</td>
+                                <td>₹8.5 LPA</td>
+                            </tr>
+                            <tr>
+                                <td>2022-23</td>
+                                <td>92%</td>
+                                <td>₹7.8 LPA</td>
+                            </tr>
+                            <tr>
+                                <td>2021-22</td>
+                                <td>88%</td>
+                                <td>₹6.5 LPA</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Page -->
+    <section id="contact" class="page">
+        <div class="container">
+            <h1 class="page-title">Contact Us</h1>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Address</h3>
+                        <p>Aurora Valley College<br>
+                        Knowledge Park, Sector 5<br>
+                        Aurora Valley, State - 123456</p>
+                    </div>
+
+                    <div class="info-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>+91 1234 567 890<br>
+                        +91 9876 543 210<br>
+                        (Mon-Sat, 9 AM - 6 PM)</p>
+                    </div>
+
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>info@auroravalley.edu<br>
+                        admissions@auroravalley.edu<br>
+                        placements@auroravalley.edu</p>
+                    </div>
+
+                    <div class="info-card">
+                        <i class="fas fa-share-alt"></i>
+                        <h3>Follow Us</h3>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-section">
+                    <h2>Send us a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select Subject</option>
+                                <option value="admission">Admission Inquiry</option>
+                                <option value="course">Course Information</option>
+                                <option value="placement">Placement Query</option>
+                                <option value="hostel">Hostel Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="map-section">
+                <h2>Find Us on Map</h2>
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <p>Interactive map will be displayed here</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Aurora Valley College</h3>
+                <p>Excellence in Education Since 1995</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#admissions">Admissions</a></li>
+                    <li><a href="#placements">Placements</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Student Portal</a></li>
+                    <li><a href="#">Faculty Portal</a></li>
+                    <li><a href="#">Library</a></li>
+                    <li><a href="#">Downloads</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p><i class="fas fa-phone"></i> +91 1234 567 890</p>
+                <p><i class="fas fa-envelope"></i> info@auroravalley.edu</p>
+                <p><i class="fas fa-map-marker-alt"></i> Aurora Valley, State - 123456</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Aurora Valley College. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    
+
+    
+<!-- Watson Chatbot Integration -->
+<script>
+window.watsonAssistantChatOptions = {
+  integrationID: "c989da3d-60bb-4e62-81ec-bf78aa58360d",
+  region: "jp-tok",
+  serviceInstanceID: "0c883680-279a-4231-a66d-5f6454665ea4",
+  onLoad: async (instance) => { await instance.render(); }
+};
+
+setTimeout(function () {
+  const t = document.createElement('script');
+  t.src =
+    "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
+    (window.watsonAssistantChatOptions.clientVersion || "latest") +
+    "/WatsonAssistantChatEntry.js";
+  document.head.appendChild(t);
+});
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
