@@ -1,8 +1,8 @@
 # college-chatbot-website
 
-#🎓 Aurora Valley College Chatbot Website
+# 🎓 Aurora Valley College Chatbot Website
 
-#📌 Project Description
+# 📌 Project Description
 
 The Aurora Valley College Chatbot Website is a college information portal integrated with an AI-powered chatbot using IBM Watson Assistant.
 
@@ -13,14 +13,14 @@ This project demonstrates the integration of a conversational AI assistant withi
 
 ⸻
 
-#🚀 Features
+# 🚀 Features
 	•	Responsive college website interface
 	•	AI-powered chatbot using IBM Watson Assistant
 	•	Easy navigation between multiple sections
 	•	Quick access to important student information
 	•	Interactive chatbot responses for common queries
 
-#Website Sections
+# Website Sections
 	•	Home
 	•	About
 	•	Courses
@@ -31,7 +31,7 @@ This project demonstrates the integration of a conversational AI assistant withi
 
 ⸻
 
-#🤖 Chatbot Functionality
+# 🤖 Chatbot Functionality
 
 The IBM Watson chatbot helps users by answering questions related to:
 	•	Admission process
@@ -45,7 +45,7 @@ The chatbot uses intents and dialog flows created in IBM Watson Assistant to res
 
 ⸻
 
-#🛠 Technologies Used
+# 🛠 Technologies Used
 
 Technology	Purpose
 HTML5	Structure of the website
@@ -57,7 +57,7 @@ GitHub	Version control and hosting
 
 ⸻
 
-#📁 Project Structure
+# 📁 Project Structure
 
 college-chatbot-website
 │
@@ -66,7 +66,7 @@ college-chatbot-website
 ├── script.js
 └── README.md
 
-#File Description
+# File Description
 
 index.html
 Main webpage containing the structure and chatbot integration script.
@@ -79,7 +79,7 @@ Handles navigation, interactions, and other client-side functionality.
 
 ⸻
 
-#🌐 Live Website
+# 🌐 Live Website
 
 The project is hosted using GitHub Pages.
 
@@ -90,7 +90,7 @@ https://bhanurathee.github.io/college-chatbot-website
 
 ⸻
 
-#▶ How to Run the Project Locally
+# ▶ How to Run the Project Locally
 	1.	Download or clone the repository
 	2.	Open the project folder
 	3.	Open index.html in any web browser
@@ -99,7 +99,7 @@ The website will load and the chatbot will appear on the bottom right corner of 
 
 ⸻
 
-#📚 Project Objective
+# 📚 Project Objective
 
 The objective of this project is to demonstrate:
 	•	Basic website development
@@ -109,7 +109,7 @@ The objective of this project is to demonstrate:
 
 ⸻
 
-#👨‍💻 Author
+# 👨‍💻 Author
 
 Bhanu Rathee
 
