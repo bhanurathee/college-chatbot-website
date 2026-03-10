@@ -120,52 +120,39 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Add scroll effect to navbar
-let lastScroll = 0;
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
-    const currentScroll = window.pageYOffset;
-    
-    if (currentScroll <= 0) {
-        navbar.style.boxShadow = 'var(--shadow)';
-        return;
-    }
-    
-    if (currentScroll > lastScroll) {
-        // Scrolling down
-        navbar.style.transform = 'translateY(-100%)';
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
     } else {
-        // Scrolling up
-        navbar.style.transform = 'translateY(0)';
-        navbar.style.boxShadow = 'var(--shadow-lg)';
+        navbar.classList.remove('scrolled');
     }
-    
-    lastScroll = currentScroll;
 });
 
-// Ensure navbar is visible by default
-document.querySelector('.navbar').style.transition = 'all 0.3s ease';
-document.querySelector('.navbar').style.transform = 'translateY(0)';
-
-// Intersection Observer for animations
+// Intersection Observer for staggered animations
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
 };
 
 const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
+    entries.forEach((entry, index) => {
         if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
+            // Stagger delay based on node structure if multiple items enter at once
+            setTimeout(() => {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }, index * 100);
+            observer.unobserve(entry.target);
         }
     });
 }, observerOptions);
 
-// Observe feature cards
-document.querySelectorAll('.feature-card, .course-card, .hostel-card').forEach(card => {
+// Observe feature cards, courses, and hostels
+document.querySelectorAll('.feature-card, .course-card, .hostel-card, .content-card, .step, .eligibility-item, .info-card, .stat-card').forEach(card => {
     card.style.opacity = '0';
-    card.style.transform = 'translateY(20px)';
-    card.style.transition = 'all 0.6s ease';
+    card.style.transform = 'translateY(30px)';
+    card.style.transition = 'all 0.6s cubic-bezier(0.16, 1, 0.3, 1)';
     observer.observe(card);
 });
 
@@ -202,10 +189,3 @@ window.watsonAssistantChatOptions = {
     // Your Watson configuration will go here
     // This is just a placeholder
 };
-
-/* 
-   To integrate IBM Watson Assistant:
-   1. Get your integration script from IBM Watson Assistant
-   2. Paste it in the designated script section in index.html
-   3. The chatbot icon click handler above can be modified to trigger Watson
-*/
